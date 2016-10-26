@@ -60,6 +60,8 @@
     "node_modules/**",
     "src/js/materialize/init.js",
     "src/js/materialize/materialize.js",
-    "src/js/materialize/materialize.min.js"
+    "src/js/materialize/materialize.min.js",
+    "src/fiddle.js"
+
   ]
 }

@@ -9,7 +9,12 @@
       'ngRoute',
       'myApp.config',
       'myApp.components.main',
-      'myApp.components.register'
+      'myApp.components.register',
+      'myApp.register.services',
+      'myApp.components.login',
+      'myApp.login.services',
+      'myApp.components.members',
+      'myApp.members.services'
 
     ]);
 
