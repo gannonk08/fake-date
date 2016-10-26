@@ -1,0 +1,83 @@
+  <nav class="white" role="navigation">
+    <div class="nav-wrapper container">
+      <a id="logo-container" href="#" class="brand-logo">Fake-Date</a>
+      <ul class="right hide-on-med-and-down">
+        <li><a href="#/login">Login</a></li>
+        <li><a href="#/register">Register</a></li>
+      </ul>
+
+      <ul id="nav-mobile" class="side-nav">
+        <li><a href="#/login">Login</a></li>
+        <li><a href="#/register">Register</a></li>
+      </ul>
+      <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+    </div>
+  </nav>
+<div class="row">
+  <div class="col s12 m8 offset-m2 l6 offset-l3">
+    <div class="card-panel">
+      <h4 class="header2">Login to Fake-Date</h4>
+      <div class="row">
+        <form class="col s12" ng-submit="loginCtrl.loginUser()" novalidate>
+          <div class="row">
+            <div class="row">
+              <div class="input-field col s12 m12 l12">
+                <input ng-model="loginCtrl.userInfo.email" id="email" type="email" class="validate">
+                <label for="email">Email</label>
+              </div>
+            </div>
+            <div class="row">
+              <div class="input-field col s12 m12 l12">
+                <input ng-model="loginCtrl.userInfo.password" id="password" type="password" class="validate">
+                <label for="password">Password</label>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="row">
+              <div class="input-field col s12">
+                <button class="btn cyan waves-effect waves-light right" type="submit" name="action">Submit
+                </button>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+  <footer class="page-footer teal">
+    <div class="container">
+      <div class="row">
+        <div class="col l6 s12">
+          <h5 class="white-text">Company Bio</h5>
+          <p class="grey-text text-lighten-4">We are a team of college students working on this project like it's our full time job. Any amount would help support and continue development on this project and is greatly appreciated.</p>
+
+
+        </div>
+        <div class="col l3 s12">
+          <h5 class="white-text">Settings</h5>
+          <ul>
+            <li><a class="white-text" href="#!">Link 1</a></li>
+            <li><a class="white-text" href="#!">Link 2</a></li>
+            <li><a class="white-text" href="#!">Link 3</a></li>
+            <li><a class="white-text" href="#!">Link 4</a></li>
+          </ul>
+        </div>
+        <div class="col l3 s12">
+          <h5 class="white-text">Connect</h5>
+          <ul>
+            <li><a class="white-text" href="#!">Link 1</a></li>
+            <li><a class="white-text" href="#!">Link 2</a></li>
+            <li><a class="white-text" href="#!">Link 3</a></li>
+            <li><a class="white-text" href="#!">Link 4</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="container">
+      Made by <a class="brown-text text-lighten-3" href="http://kristjangannon.press">Kristjan Gannon</a>
+      </div>
+    </div>
+  </footer>

@@ -20,6 +20,18 @@
         controllerAs: 'registerCtrl',
         access: true
       })
+      .when('/login', {
+        templateUrl: 'js/components/login/login.view.html',
+        controller: 'loginController',
+        controllerAs: 'loginCtrl',
+        access: true
+      })
+      .when('/members', {
+        templateUrl: 'js/components/members/members.view.html',
+        controller: 'membersController',
+        controllerAs: 'membersCtrl',
+        access: true
+      })
       .otherwise({
         redirectTo: '/home'
       });
