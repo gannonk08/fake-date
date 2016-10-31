@@ -1,0 +1,179 @@
+<nav class="white" role="navigation">
+  <div class="nav-wrapper container">
+    <a id="logo-container" href="#" class="brand-logo">Fake-Date</a>
+    <ul class="right hide-on-med-and-down">
+      <li><a href="#/login">Login</a></li>
+      <li><a href="#/register">Register</a></li>
+      <li><a href="#/myAcct">My Account</a></li>
+
+    </ul>
+
+    <ul id="nav-mobile" class="side-nav">
+      <li><a href="#/login">Login</a></li>
+      <li><a href="#/register">Register</a></li>
+      <li><a href="#/myAcct">My Account</a></li>
+    </ul>
+    <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+  </div>
+</nav>
+<br>
+<div class="row">
+  <div class="col s12 m7 l7">
+    <div class="card-panel">
+      <h4 class="header3">Edit your Account Info:</h4>
+      <div class="row">
+        <form class="col s12" ng-submit="myAcctCtrl.registerUser()" novalidate>
+          <div class="row">
+            <div class="input-field col s12 m4 l4">
+              <input ng-model="myAcctCtrl.newUser.firstName" id="firstName" type="text" class="validate">
+              <label for="firstName">First Name</label>
+            </div>
+            <div class="input-field col s12 m4 l4">
+              <input ng-model="myAcctCtrl.newUser.lastName" id="lastName" type="text" class="validate">
+              <label for="lastName">Last Name</label>
+            </div>
+            <div class="input-field col s12 m4 l4">
+              <input ng-model="myAcctCtrl.newUser.dob" id="dob" type="date" class="validate">
+              <label class="active"for="dob">Date of Birth</label>
+            </div>
+          </div>
+          <div class="row">
+            <div class="input-field col s12 m3 l3">
+              <input ng-model="myAcctCtrl.newUser.username" id="username" type="text" class="validate">
+              <label for="username">User Name</label>
+            </div>
+            <div class="input-field col s12 m3 l3">
+              <input ng-model="myAcctCtrl.newUser.email" id="email" type="email" class="validate">
+              <label for="email">Email</label>
+            </div>
+            <div class="input-field col s12 m3 l3">
+              <input ng-model="myAcctCtrl.newUser.password" id="password" type="password" class="validate">
+              <label for="password">Password</label>
+            </div>
+            <div class="input-field col s12 m3 l3">
+              <input ng-model="myAcctCtrl.newUser.phone" id="phone" type="text" class="validate">
+              <label for="phone">Phone Number</label>
+          </div>
+          <div class="row">
+            <div class="col s1 m1 l1">
+              <a ng-click="myAcctCtrl.showAdd()" class="btn-floating btn-large waves-effect waves-light red"><i class="material-icons">add</i></a>
+            </div>
+            <div class="col s10 m10 l10 offset-m1 offset-l1">
+              <h5>Add Additional Info</h5>
+            </div>
+          </div>
+          <div ng-show="myAcctCtrl.formShown" class="row">
+            <div class="col s12 m12 l12">
+              <div class="row">
+                <div class="input-field col s12 m4 l4">
+                  <input ng-model="myAcctCtrl.newUser.decription" id="decription" type="text" class="validate">
+                  <label for="decription">Descripe your self</label>
+                </div>
+                <div class="input-field col s12 m4 l4">
+                  <input ng-model="myAcctCtrl.newUser.avatar" id="avatar" type="text" class="validate">
+                  <label for="avatar">Avatar URL</label>
+                </div>
+                <div class="input-field col s12 m4 l4">
+                  <select class="browser-default" ng-model="myAcctCtrl.newUser.gender">
+                    <option value="" disabled selected>Choose your gender</option>
+                    <option value="1">Male</option>
+                    <option value="2">Female</option>
+                    <option value="3">Other</option>
+                  </select>
+                </div>
+              </div>
+                <div class="row">
+                  <div class="input-field col s12 m3 l3">
+                    <input ng-model="myAcctCtrl.newUser.st" id="street" type="text" class="validate">
+                    <label for="street">Street Address</label>
+                  </div>
+                  <div class="input-field col s12 m3 l3">
+                    <input ng-model="myAcctCtrl.newUser.suite" id="suite" type="text" class="validate">
+                    <label for="suite">Suite</label>
+                  </div>
+                  <div class="input-field col s12 m3 l3">
+                    <input ng-model="myAcctCtrl.newUser.city" id="city" type="text" class="validate">
+                    <label for="city">City</label>
+                  </div>
+                  <div class="input-field col s12 m3 l3">
+                    <input ng-model="myAcctCtrl.newUser.zipcode" id="zipcode" type="text" class="validate">
+                    <label for="zipcode">Zipcode</label>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="input-field col s12 m3 l3">
+                    <input ng-model="myAcctCtrl.newUser.website" id="website" type="text" class="validate">
+                    <label for="website">Website</label>
+                  </div>
+                  <div class="input-field col s12 m3 l3">
+                    <input ng-model="myAcctCtrl.newUser.companyName" id="companyName" type="text" class="validate">
+                    <label for="companyName">Company Name</label>
+                  </div>
+                  <div class="input-field col s12 m3 l3">
+                    <input ng-model="myAcctCtrl.newUser.bs" id="bs" type="text" class="validate">
+                    <label for="bs">Company BS</label>
+                  </div>
+                  <div class="input-field col s12 m3 l3">
+                    <input ng-model="myAcctCtrl.newUser.catchPharse" id="catchPharse" type="text" class="validate">
+                    <label for="catchPharse">Catch Pharse</label>
+                  </div>
+                </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="row">
+              <div class="input-field col s12">
+                <button class="btn cyan waves-effect waves-light right" type="submit" name="action">Submit
+                </button>
+              </div>
+            </div>
+          </div>
+
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+
+
+
+
+
+
+  <footer class="page-footer teal">
+    <div class="container">
+      <div class="row">
+        <div class="col l6 s12">
+          <h5 class="white-text">Company Bio</h5>
+          <p class="grey-text text-lighten-4">We are a team of college students working on this project like it's our full time job. Any amount would help support and continue development on this project and is greatly appreciated.</p>
+
+
+        </div>
+        <div class="col l3 s12">
+          <h5 class="white-text">Settings</h5>
+          <ul>
+            <li><a class="white-text" href="#!">Link 1</a></li>
+            <li><a class="white-text" href="#!">Link 2</a></li>
+            <li><a class="white-text" href="#!">Link 3</a></li>
+            <li><a class="white-text" href="#!">Link 4</a></li>
+          </ul>
+        </div>
+        <div class="col l3 s12">
+          <h5 class="white-text">Connect</h5>
+          <ul>
+            <li><a class="white-text" href="#!">Link 1</a></li>
+            <li><a class="white-text" href="#!">Link 2</a></li>
+            <li><a class="white-text" href="#!">Link 3</a></li>
+            <li><a class="white-text" href="#!">Link 4</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="container">
+      Made by <a class="brown-text text-lighten-3" href="http://kristjangannon.press">Kristjan Gannon</a>
+      </div>
+    </div>
+  </footer>

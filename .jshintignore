@@ -1,2 +1,7 @@
 src/js/materialize/
 src/fiddle.js
+src/js/components/members/members.services.js
+src/js/components/members/members.controller.js
+src/js/components/myAcct/myAcct.services.js
+src/js/components/myAcct/myAcct.controller.js
+src/js/vendor/ng-map.js

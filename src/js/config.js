@@ -32,6 +32,12 @@
         controllerAs: 'membersCtrl',
         access: true
       })
+      .when('/myAcct', {
+        templateUrl: 'js/components/myAcct/myAcct.view.html',
+        controller: 'myAcctController',
+        controllerAs: 'myAcctCtrl',
+        access: true
+      })
       .otherwise({
         redirectTo: '/home'
       });

@@ -15,6 +15,7 @@
       loginService.loginUser(vm.userInfo)
       .then((user) => {
         console.log(user);
+        localStorage.setItem('acctID',user.data.data.user._id);
         localStorage.setItem('token',user.data.data.token);
       })
       .catch((err) => {

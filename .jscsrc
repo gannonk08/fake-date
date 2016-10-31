@@ -61,7 +61,10 @@
     "src/js/materialize/init.js",
     "src/js/materialize/materialize.js",
     "src/js/materialize/materialize.min.js",
-    "src/fiddle.js"
+    "src/fiddle.js",
+    "src/js/members/members.services.js",
+    "src/js/myAcct/myAcct.services.js",
+    "src/js/vendor/ng-map.js"
 
   ]
 }
