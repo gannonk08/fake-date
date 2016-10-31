@@ -14,8 +14,9 @@
       'myApp.components.login',
       'myApp.login.services',
       'myApp.components.members',
-      'myApp.members.services'
-
+      'myApp.members.services',
+      'myApp.components.myAcct',
+      'myApp.myAcct.services'
     ]);
 
 })();

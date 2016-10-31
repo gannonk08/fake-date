@@ -18,63 +18,63 @@
 </nav>
 <br>
 <div class="row">
-  <div class="col s12 m10 offset-m1 l10 offset-l1">
+  <div class="col s12 m7 l7">
     <div class="card-panel">
-      <h4 class="header2">Register For Fake-Date</h4>
+      <h4 class="header3">Edit your Account Info:</h4>
       <div class="row">
-        <form class="col s12" ng-submit="registerCtrl.registerUser()" novalidate>
+        <form class="col s12" ng-submit="myAcctCtrl.registerUser()" novalidate>
           <div class="row">
             <div class="input-field col s12 m4 l4">
-              <input ng-model="registerCtrl.newUser.firstName" id="firstName" type="text" class="validate">
+              <input ng-model="myAcctCtrl.newUser.firstName" id="firstName" type="text" class="validate">
               <label for="firstName">First Name</label>
             </div>
             <div class="input-field col s12 m4 l4">
-              <input ng-model="registerCtrl.newUser.lastName" id="lastName" type="text" class="validate">
+              <input ng-model="myAcctCtrl.newUser.lastName" id="lastName" type="text" class="validate">
               <label for="lastName">Last Name</label>
             </div>
             <div class="input-field col s12 m4 l4">
-              <input ng-model="registerCtrl.newUser.dob" id="dob" type="date" class="validate">
+              <input ng-model="myAcctCtrl.newUser.dob" id="dob" type="date" class="validate">
               <label class="active"for="dob">Date of Birth</label>
             </div>
           </div>
           <div class="row">
             <div class="input-field col s12 m3 l3">
-              <input ng-model="registerCtrl.newUser.username" id="username" type="text" class="validate">
+              <input ng-model="myAcctCtrl.newUser.username" id="username" type="text" class="validate">
               <label for="username">User Name</label>
             </div>
             <div class="input-field col s12 m3 l3">
-              <input ng-model="registerCtrl.newUser.email" id="email" type="email" class="validate">
+              <input ng-model="myAcctCtrl.newUser.email" id="email" type="email" class="validate">
               <label for="email">Email</label>
             </div>
             <div class="input-field col s12 m3 l3">
-              <input ng-model="registerCtrl.newUser.password" id="password" type="password" class="validate">
+              <input ng-model="myAcctCtrl.newUser.password" id="password" type="password" class="validate">
               <label for="password">Password</label>
             </div>
             <div class="input-field col s12 m3 l3">
-              <input ng-model="registerCtrl.newUser.phone" id="phone" type="text" class="validate">
+              <input ng-model="myAcctCtrl.newUser.phone" id="phone" type="text" class="validate">
               <label for="phone">Phone Number</label>
           </div>
           <div class="row">
             <div class="col s1 m1 l1">
-              <a ng-click="registerCtrl.showAdd()" class="btn-floating btn-large waves-effect waves-light red"><i class="material-icons">add</i></a>
+              <a ng-click="myAcctCtrl.showAdd()" class="btn-floating btn-large waves-effect waves-light red"><i class="material-icons">add</i></a>
             </div>
-            <div class="col s11 m11 l11">
+            <div class="col s10 m10 l10 offset-m1 offset-l1">
               <h5>Add Additional Info</h5>
             </div>
           </div>
-          <div ng-show="registerCtrl.formShown" class="row">
+          <div ng-show="myAcctCtrl.formShown" class="row">
             <div class="col s12 m12 l12">
               <div class="row">
                 <div class="input-field col s12 m4 l4">
-                  <input ng-model="registerCtrl.newUser.decription" id="decription" type="text" class="validate">
+                  <input ng-model="myAcctCtrl.newUser.decription" id="decription" type="text" class="validate">
                   <label for="decription">Descripe your self</label>
                 </div>
                 <div class="input-field col s12 m4 l4">
-                  <input ng-model="registerCtrl.newUser.avatar" id="avatar" type="text" class="validate">
+                  <input ng-model="myAcctCtrl.newUser.avatar" id="avatar" type="text" class="validate">
                   <label for="avatar">Avatar URL</label>
                 </div>
                 <div class="input-field col s12 m4 l4">
-                  <select class="browser-default" ng-model="registerCtrl.newUser.gender">
+                  <select class="browser-default" ng-model="myAcctCtrl.newUser.gender">
                     <option value="" disabled selected>Choose your gender</option>
                     <option value="1">Male</option>
                     <option value="2">Female</option>
@@ -84,37 +84,37 @@
               </div>
                 <div class="row">
                   <div class="input-field col s12 m3 l3">
-                    <input ng-model="registerCtrl.newUser.st" id="street" type="text" class="validate">
+                    <input ng-model="myAcctCtrl.newUser.st" id="street" type="text" class="validate">
                     <label for="street">Street Address</label>
                   </div>
                   <div class="input-field col s12 m3 l3">
-                    <input ng-model="registerCtrl.newUser.suite" id="suite" type="text" class="validate">
+                    <input ng-model="myAcctCtrl.newUser.suite" id="suite" type="text" class="validate">
                     <label for="suite">Suite</label>
                   </div>
                   <div class="input-field col s12 m3 l3">
-                    <input ng-model="registerCtrl.newUser.city" id="city" type="text" class="validate">
+                    <input ng-model="myAcctCtrl.newUser.city" id="city" type="text" class="validate">
                     <label for="city">City</label>
                   </div>
                   <div class="input-field col s12 m3 l3">
-                    <input ng-model="registerCtrl.newUser.zipcode" id="zipcode" type="text" class="validate">
+                    <input ng-model="myAcctCtrl.newUser.zipcode" id="zipcode" type="text" class="validate">
                     <label for="zipcode">Zipcode</label>
                   </div>
                 </div>
                 <div class="row">
                   <div class="input-field col s12 m3 l3">
-                    <input ng-model="registerCtrl.newUser.website" id="website" type="text" class="validate">
+                    <input ng-model="myAcctCtrl.newUser.website" id="website" type="text" class="validate">
                     <label for="website">Website</label>
                   </div>
                   <div class="input-field col s12 m3 l3">
-                    <input ng-model="registerCtrl.newUser.companyName" id="companyName" type="text" class="validate">
+                    <input ng-model="myAcctCtrl.newUser.companyName" id="companyName" type="text" class="validate">
                     <label for="companyName">Company Name</label>
                   </div>
                   <div class="input-field col s12 m3 l3">
-                    <input ng-model="registerCtrl.newUser.bs" id="bs" type="text" class="validate">
+                    <input ng-model="myAcctCtrl.newUser.bs" id="bs" type="text" class="validate">
                     <label for="bs">Company BS</label>
                   </div>
                   <div class="input-field col s12 m3 l3">
-                    <input ng-model="registerCtrl.newUser.catchPharse" id="catchPharse" type="text" class="validate">
+                    <input ng-model="myAcctCtrl.newUser.catchPharse" id="catchPharse" type="text" class="validate">
                     <label for="catchPharse">Catch Pharse</label>
                   </div>
                 </div>
@@ -135,6 +135,12 @@
   </div>
 </div>
 </div>
+
+
+
+
+
+
 
   <footer class="page-footer teal">
     <div class="container">

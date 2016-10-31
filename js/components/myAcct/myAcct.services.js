@@ -3,16 +3,16 @@
   'use strict';
 
   angular
-    .module('myApp.members.services', [])
-    .service('membersService', membersService);
+    .module('myApp.myAcct.services', [])
+    .service('myAcctService', myAcctService);
 
-  membersService.$inject = ['$http'];
+  myAcctService.$inject = ['$http'];
 
-  function membersService($http) {
+  function myAcctService($http) {
     /*jshint validthis: true */
     const baseURL = 'http://galvanize-student-apis.herokuapp.com/gdating/';
-    this.getMembers = function(queryParameters) {
-      var queryURL = baseURL + 'members' + queryParameters;
+    this.getMember = function(memberID) {
+      var queryURL = baseURL + 'members/' + memberID;
       return $http({
         method: 'GET',
         url: queryURL,
@@ -20,5 +20,4 @@
       });
     };
   }
-
 })();
