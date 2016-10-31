@@ -10,7 +10,7 @@
 
   function membersService($http) {
     /*jshint validthis: true */
-    const baseURL = 'http://galvanize-student-apis.herokuapp.com/gdating/';
+    const baseURL = 'https://galvanize-student-apis.herokuapp.com/gdating/';
     this.getMembers = function(queryParameters) {
       var queryURL = baseURL + 'members' + queryParameters;
       return $http({

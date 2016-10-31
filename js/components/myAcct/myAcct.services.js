@@ -10,7 +10,7 @@
 
   function myAcctService($http) {
     /*jshint validthis: true */
-    const baseURL = 'http://galvanize-student-apis.herokuapp.com/gdating/';
+    const baseURL = 'https://galvanize-student-apis.herokuapp.com/gdating/';
     this.getMember = function(memberID) {
       var queryURL = baseURL + 'members/' + memberID;
       return $http({

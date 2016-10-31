@@ -10,7 +10,7 @@
 
   function loginService($http) {
     /*jshint validthis: true */
-    const baseURL = 'http://galvanize-student-apis.herokuapp.com/gdating/';
+    const baseURL = 'https://galvanize-student-apis.herokuapp.com/gdating/';
     this.loginUser = function(userInfo) {
       console.log(userInfo);
       return $http({

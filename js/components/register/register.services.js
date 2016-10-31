@@ -10,7 +10,7 @@
 
   function registerService($http) {
     /*jshint validthis: true */
-    const baseURL = 'http://galvanize-student-apis.herokuapp.com/gdating/';
+    const baseURL = 'https://galvanize-student-apis.herokuapp.com/gdating/';
     this.registerUserPost = function(newUser) {
       var formattedUser = {
         username: newUser.username || '',
